@@ -1,0 +1,34 @@
+<template>
+            <lightning-layout>
+                <lightning-layout-item style="margin: 0 auto;" size="11" small-device-size="11" medium-device-size="5" large-device-size="3">
+                    <span onkeyup={onKeyUp}>
+                        <label class="slds-form-element__legend slds-form-element__label">{usernameLabel}</label>
+                        <lightning-input required type="text" variant="label-hidden" name="username" value={username} class="dee-font-12pt" onchange={userNameChangeHandler}></lightning-input>
+                    </span>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="slds-m-top_medium">
+                <lightning-layout-item style="margin: 0 auto;" size="11" small-device-size="11" medium-device-size="5" large-device-size="3">
+                    <span onkeyup={onKeyUp}>
+                        <label class="slds-form-element__legend slds-form-element__label">{passwordLabel}</label>
+                        <lightning-input required type="password" variant="label-hidden" name="password" value={password} class="dee-font-12pt" onchange={passwordChangeHandler}></lightning-input>
+                    </span>
+                </lightning-layout-item>
+            </lightning-layout>
+            <!-- <lightning-layout class="slds-m-top_medium">
+                <lightning-layout-item style="margin: 0 auto;" size="11" small-device-size="11" medium-device-size="5" large-device-size="3">
+                    <lightning-button variant="success" label={loginButtonLabel} title="Login" onclick={handleLogin} class="slds-text-heading_small" stretch></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout class="slds-m-top_medium">
+                <lightning-layout-item style="margin: 0 auto;" size="11" small-device-size="11" medium-device-size="5" large-device-size="3">
+                    <a onclick={navigateToForgotPassword} class="inverseTextColor">{forgotPasswordLabel}</a>
+                    <template if:true={isSelfRegistrationEnabled}>
+                        <div style="float: right">
+                            <a onclick={navigateToSelfRegister} class="inverseTextColor">{selfRegisterLabel}</a>
+                            <lightning-helptext class="slds-is-relative" style="top: -0.28em; left: 0.28em;" content={selfRegisterTooltip}></lightning-helptext>
+                        </div>
+                    </template>
+                </lightning-layout-item>            
+            </lightning-layout> -->
+</template>
